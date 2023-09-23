@@ -17,14 +17,14 @@
             </a>
             <div class="nav-links">
                 <ul class="flex">
-                    <li class="hovorlink nav-item">Finance</li>
-                    <li class="hovorlink nav-item">Politics</li>
-                    <li class="hovorlink nav-item">Technology</li>
+                    <li class="hovorlink nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hovorlink nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hovorlink nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
                 </ul>
             </div>
             <div class="search-bar">
                 <input type="text" class="news-input" placeholder="e.g. Science">
-                <button class="search-button">Search</button>
+                <button id="search-button" class="search-button">Search</button>
             </div>
         </div>
     </nav>

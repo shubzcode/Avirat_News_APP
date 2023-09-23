@@ -22,6 +22,7 @@ function bindData(articles) {
     articles.forEach((article) => {
         if(!article.urlToImage) return;
         const cardClone = newsCardTemplate.content.cloneNode(true);
+        fillDataInCard(cardClone, article);
         cardContainer.appendChild(cardClone);
     });
 }
@@ -44,4 +45,13 @@ function fillDataInCard(cardClone, article) {
     cardClone.firstElementChild.addEventListener("click", () => {
         window.open(article.url, "_blank");
     });
+}
+
+let curSelectedNav = null;
+function onNavItemClick(id) {
+    fetchNews(id);
+    const navItem = document.getElementById(id);
+    curSelectedNav?.classList.removel('active');
+    curSelectedNav = navItem;
+    curSelectedNav.classList.add('active');
 }

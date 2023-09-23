@@ -8,5 +8,3 @@ async function fetchNews(query) {
     const data = await res.json();
     bindData(data.articles);
 }
-
-

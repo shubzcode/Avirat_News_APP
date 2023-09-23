@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avirat Tech News</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo">
+                <img src="./Assets/Logo news.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hovorlink nav-item">Finance</li>
+                    <li class="hovorlink nav-item">Politics</li>
+                    <li class="hovorlink nav-item">Technology</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="news-input" placeholder="e.g. Science">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="News-Title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadgets 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum vel
+                    perspiciatis asperiores animi laborum odio ipsam iusto dicta nihil commodi.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>

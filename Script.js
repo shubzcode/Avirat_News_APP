@@ -55,3 +55,12 @@ function onNavItemClick(id) {
     curSelectedNav = navItem;
     curSelectedNav.classList.add('active');
 }
+
+const searchButtton = document.getElementById('search-button');
+const searchText = document.getElementById('search-text');
+
+searchButtton.addEventListener('click', () => {
+    const query = searchText.value;
+    if(!query) return;
+    fetchNews(query);
+});
